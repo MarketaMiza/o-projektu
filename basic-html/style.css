@@ -2,8 +2,6 @@
 
 /* normalize CSS */
 
-/* black- #111111 */
-
 *::before,
 *::after {
   box-sizing: border-box;
@@ -28,11 +26,8 @@ body {
   font-family: "Bebas Neue", sans-serif;
   font-family: "Fira Code", monospace;
   margin: 0;
-
   overflow: hidden;
   overflow-y: auto;
-
-  background-image: url(./img/iStock-1426547978.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -41,31 +36,11 @@ body {
   text-align: center;
 }
 
-strong {
-  font-weight: bolder;
-}
 
-img {
-  border-style: none;
-  max-width: 100%;
-  height: auto;
-}
-
-p {
-  font-size: 1rem;
-  font-weight: 200;
-  margin: 1rem 0 0;
-}
-
-h1,
 h2,
 h3 {
   margin: 0;
   line-height: 1;
-}
-
-h2,
-h3 {
   font-size: clamp(1.75rem, 8vw, 2.5rem);
 }
 
@@ -88,10 +63,10 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  max-width: 66.666667%;
+  max-width: 100%;
   padding: 0 1.25rem;
   margin: 0 auto;
-  background-color: rgb(231, 237, 237, 0.6);
+ 
 }
 
 menu {
@@ -142,25 +117,77 @@ a:hover:after {
   left: 0;
 }
 
+/* ARTICLE */
 .group {
   display: flex;
   flex: 1;
+  flex: wrap;
 }
+ /* text o projektu */
+
+ .text {
+  margin-top: 3rem;
+ }
 
 .text p {
-
   font-size: 1rem;
   margin: 1rem;
-
   text-align: justify;
   hyphens: none;
+}
+
+
+img {
+  border-style: none;
+  max-width: 60vh;
+  height: 60vh;
+  flex-basis: 50%;
 }
 
 footer {
   margin: 1rem 0;
   font-size: 0.75rem;
-  font-family: "Bebas Neue", sans-serif;
-  font-family: "Fira Code", monospace;
-  text-align: center;
-  /* background-color: rgb(231, 237, 237, 0.6); */
+ 
+  text-align:justify;
+ 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10px; /* Prostor mezi prvky (upravte podle potřeby) */
 }
+
+
+.small {
+  flex-basis: 45%; /* Prispůsobte šířku podle potřeby */
+}
+.small {
+  text-align: left;
+}
+
+.small.right {
+  text-align: right;
+}
+
+
+@media only screen and (max-width: 767px) {
+
+  .container {
+    max-width: fit-content;
+  }
+  .group {
+
+    flex-direction: column;
+    align-items: center; 
+  
+  }
+  .group img {
+    flex-basis: auto; }
+
+    img {
+      width: 30vh;
+      height: 30vh;
+    }
+
+  }
+
+
+
