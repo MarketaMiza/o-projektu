@@ -6,8 +6,6 @@ export const Home = () => {
   return (
     // <main className="container">
     <>
-    
-    
       <article className="group">
         <img src={Hands} alt="hands" />
 

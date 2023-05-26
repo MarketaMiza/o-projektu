@@ -1,5 +1,6 @@
 import React from "react";
 import MarketaPhoto from "./img/MM_photo.png";
+// import Resume from "./img/Marketa_resume_2023-05.pdf";
 import "./marketa.css";
 
 export const Marketa = () => {
@@ -31,14 +32,15 @@ export const Marketa = () => {
               </li>
             </ul>
             <div className="nav__close" id="nav-close">
-              <i class="ri-close-fill"></i>
+              <i className="ri-close-fill"></i>
             </div>
             <nav className="nav__toggle" id="nav__toggle">
-              <i class="ri-menu-fill"></i>
+              <i className="ri-menu-fill"></i>
             </nav>
           </div>
         </nav>
       </header>
+     
       <main className="main">
         <section className="home" id="home">
           <div className="home__box box grid">
@@ -50,8 +52,8 @@ export const Marketa = () => {
             <div className="home__data">
               <h1 className="home__name">Markéta Mížová</h1>
               <p className="home__work">
-                {" "}
-                <strong> Budoucí Junior Frontend Developer </strong>{" "}
+               
+                <strong> Budoucí Junior Frontend Developer </strong>
               </p>
               <p className="home__work">
                 Jsem pilnou studentkou Digitální akademie web. V Czechitas jsou
@@ -75,6 +77,13 @@ export const Marketa = () => {
               </div>
             </div>
           </div>
+        </section>
+
+        <section className="hello section box">
+            <h2 className="section__title">Ahoj</h2>
+            <p className="hello__details text-lg">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, consequuntur illum! Iusto vel ut quaerat eligendi maiores quos, id voluptatem, blanditiis molestiae laboriosam autem dolorem provident? Sequi dignissimos accusamus exercitationem.</p>
+            <a href="./img/Marketa_resume_2023-05.pdf" className="button button--flex text-sm"><i className="ri-download-2-fill"></i>Moje CV</a>
+
         </section>
       </main>
 
