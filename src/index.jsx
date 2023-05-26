@@ -7,8 +7,8 @@ import {
   Link,
   Outlet,
 } from "react-router-dom";
-import { Home } from "./pages/Home/index";
-import { Marketa } from "./pages/Marketa/index";
+import { Home } from "./Pages/Home/index";
+import { Marketa } from "./Pages/Marketa/index";
 // import { Alex } from "./Pages/Alex/index";
 import "./style.css";
 
