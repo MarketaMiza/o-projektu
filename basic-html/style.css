@@ -63,7 +63,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  max-width: 100%;
+  max-width: 66%;
   padding: 0 1.25rem;
   margin: 0 auto;
  
@@ -126,12 +126,12 @@ a:hover:after {
  /* text o projektu */
 
  .text {
-  margin-top: 3rem;
+  margin-top: 1.75rem;
  }
 
 .text p {
   font-size: 1rem;
-  margin: 1rem;
+  margin: 2rem;
   text-align: justify;
   hyphens: none;
 }
@@ -142,6 +142,8 @@ img {
   max-width: 60vh;
   height: 60vh;
   flex-basis: 50%;
+  border-radius: 0.35rem;
+  filter: drop-shadow(.5rem .5rem 1rem rgb(200, 193, 194));
 }
 
 footer {
@@ -157,7 +159,7 @@ footer {
 
 
 .small {
-  flex-basis: 45%; /* Prispůsobte šířku podle potřeby */
+  flex-basis: 505%; 
 }
 .small {
   text-align: left;
