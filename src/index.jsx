@@ -1,6 +1,6 @@
-import React from 'react';
-import { createRoot } from 'react-dom/client';
-import './style.css';
+import React from "react";
+import { createRoot } from "react-dom/client";
+import "./style.css";
 import {
   createBrowserRouter,
   RouterProvider,
@@ -10,21 +10,23 @@ import {
 import { Home } from "./pages/Home/index";
 import { Marketa } from "./pages/Marketa/index";
 // import { Alex } from "./Pages/Alex/index";
-import './style.css'
+import "./style.css";
 
 const App = () => {
   return (
-    <div className="container">
-      <nav>
-        <Link to="/Home">Domů</Link>
-        <span> | </span>
-        <Link to="/Marketa">Markéta</Link>
-     
-      {/* <span> | </span>
-        <Link to="/Alex">Alex</Link> */}
-      </nav>
-      <Outlet />
-    </div>
+    <>
+      <main className="container">
+        <header>
+          <menu>
+            <ul>
+              <Link to="/Home">Home</Link>
+              <Link to="/Marketa">Markéta</Link>
+            </ul>
+          </menu>
+        </header>
+        <Outlet />
+      </main>
+    </>
   );
 };
 
@@ -37,7 +39,6 @@ const ErrorPage = () => {
   );
 };
 
-
 const router = createBrowserRouter([
   {
     path: "/",
@@ -49,7 +50,7 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/About",
+        path: "/Marketa",
         element: <Marketa />,
       },
     ],

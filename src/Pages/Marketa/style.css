@@ -1,0 +1,15 @@
+/* MARKETA CSS */
+
+.group {
+  display: flex;
+}
+
+.text {
+  font-size: 10px;
+  margin: 1rem;
+}
+
+.box .photo {
+    border: 1px solid pink;
+}
+
