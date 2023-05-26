@@ -1,8 +1,11 @@
 import React from "react";
+import Hands from './img/iStock-1426547978.jpg'
+import "./style.css"
 
 export const Home =() => {
     return(
-        <main class="container">
+
+        <main className="container">
         <header>
           <menu>
             <ul>
@@ -13,12 +16,12 @@ export const Home =() => {
           </menu>
         </header>
   
-        <article class="group">
+        <article className="group">
          
-          <img src="./img/iStock-1426547978.jpg" alt="hands" />
+          <img src={Hands} alt="hands" />
      
   
-          <div class="text">
+          <div className="text">
             <h3>Frontend Ladies</h3>
             <p>
               Web, který pomůže propojit firmy a nové juniorní frontend vývojářky.
@@ -35,8 +38,8 @@ export const Home =() => {
         </article>
   
         <footer>
-          <small class="right"> © Czechitas 2023 </small>
-          <small class="left"> Frontend Ladies - O projektu </small>
+          <small className="right"> © Czechitas 2023 </small>
+          <small className="left"> Frontend Ladies - O projektu </small>
         </footer>
       </main>
     )

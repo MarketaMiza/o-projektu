@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&family=Lobster&family=Rajdhani:wght@700&display=swap");
+
+/* normalize CSS */
+
+*::before,
+*::after {
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-kerning: auto;
+}
+
+html {
+  font-size: 100%;
+  line-height: 1.25;
+  -webkit-text-size-adjust: 100%;
+
+  --scroll-behavior: smooth;
+  scroll-behavior: smooth;
+  scroll-padding-top: 10rem;
+}
+
+body {
+  color: #0e0e0e;
+  background: #f9f9f9;
+  font-family: "Bebas Neue", sans-serif;
+  font-family: "Fira Code", monospace;
+  margin: 0;
+  overflow: hidden;
+  overflow-y: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  backface-visibility: inherit;
+  text-align: center;
+}
+
+
+h2,
+h3 {
+  margin: 0;
+  line-height: 1;
+  font-size: clamp(1.75rem, 8vw, 2.5rem);
+}
+
+figure {
+  margin: 0;
+}
+
+/* ---------------------------------------- */
+/* CSS  */
+/* MAIN / container */
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 66%;
+  padding: 0 1.25rem;
+  margin: 0 auto;
+ 
+}
+
+menu {
+  font-size: 1rem;
+
+}
+
+ul {
+  margin-top: 15px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+li {
+  padding: 5px;
+}
+
+a {
+  color: #111111;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  padding: 15px 20px;
+
+  display: inline-block;
+  position: relative;
+}
+
+
+a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #111111;
+  transition: 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+/* ARTICLE */
+.group {
+  display: flex;
+  flex: 1;
+  flex: wrap;
+}
+ /* text o projektu */
+
+ .text {
+  margin-top: 1.75rem;
+ }
+
+.text p {
+  font-size: 1rem;
+  margin: 2rem;
+  text-align: justify;
+  hyphens: none;
+}
+
+
+img {
+  border-style: none;
+  max-width: 60vh;
+  height: 60vh;
+  flex-basis: 50%;
+  border-radius: 0.35rem;
+  filter: drop-shadow(.5rem .5rem 1rem rgb(200, 193, 194));
+}
+
+footer {
+  margin: 1rem 0;
+  font-size: 0.75rem;
+ 
+  text-align:justify;
+ 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10px; /* Prostor mezi prvky (upravte podle potřeby) */
+}
+
+
+.small {
+  flex-basis: 505%; 
+}
+.small {
+  text-align: left;
+}
+
+.small.right {
+  text-align: right;
+}
+
+
+@media only screen and (max-width: 767px) {
+
+  .container {
+    max-width: fit-content;
+  }
+  .group {
+
+    flex-direction: column;
+    align-items: center; 
+  
+  }
+  .group img {
+    flex-basis: auto; }
+
+    img {
+      width: 30vh;
+      height: 30vh;
+    }
+
+  }
+
+
+
