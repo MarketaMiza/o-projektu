@@ -42,11 +42,11 @@ export const Marketa = () => {
           </div>
         </section>
 
+      </main>
       <footer>
         <small> © Czechitas 2023 </small>
         <small> Frontend Ladies - O projektu </small>
       </footer> 
-      </main>
 
     </>
   );
