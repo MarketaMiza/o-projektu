@@ -6,7 +6,7 @@ import "./marketa.css";
 export const Marketa = () => {
   return (
     <>
-      <header className="header" id="header">
+      {/* <header className="header" id="header">
         <nav className="nav container">
           <div className="nav__menu" id="nav-menu">
             <ul className="nav__list">
@@ -39,7 +39,7 @@ export const Marketa = () => {
             </nav>
           </div>
         </nav>
-      </header>
+      </header> */}
      
       <main className="main">
         <section className="home" id="home">
@@ -82,8 +82,13 @@ export const Marketa = () => {
         <section className="hello section box">
             <h2 className="section__title">Ahoj</h2>
             <p className="hello__details text-lg">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, consequuntur illum! Iusto vel ut quaerat eligendi maiores quos, id voluptatem, blanditiis molestiae laboriosam autem dolorem provident? Sequi dignissimos accusamus exercitationem.</p>
-            <a href="./img/Marketa_resume_2023-05.pdf" className="button button--flex text-sm"><i className="ri-download-2-fill"></i>Moje CV</a>
+            <a href="./img/Marketa_resume_2023-05.pdf" className="button button--flex text-sm"><i className="ri-download-2-fill"></i> DOWNLOAD CV</a>
 
+        </section>
+        {/* SKILLS */}
+        <section className="services section box" id="skills">
+          <h2 className="section--title">Technical Skills</h2>
+          
         </section>
       </main>
 
