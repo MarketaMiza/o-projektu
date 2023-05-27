@@ -12,14 +12,15 @@ export const Home = () => {
         <div className="text">
           <h3>Frontend Ladies</h3>
           <p>
-            Web, který pomůže propojit firmy a nové juniorní frontend vývojářky.
+            <strong>Web, který pomůže propojit firmy a nové juniorní frontend vývojářky.</strong>
+            <br />
+            
             Samy víme, jak je těžké sebrat odvahu a poslat CV na naši vysněnou
-            pozici v IT - ještě toho moc neumím, vždyť se mi vysmějí, tenhle
-            skill ani nemám, raději nikam CV posílat nebudu. Budeme rády, pokud
+            pozici v IT - máme obavu, že toho ještě toho moc neumíme a tak se jen učíme a hledání práce odkládáme. Budeme rády, pokud
             se nám podaří náš web zpropagovat ve firmách spolupracujících s
             Czechitas, které tak budou mít možnost podívat se na portfolia
             jednotlivých absolventek digitálních akademií a sami je oslovit s
-            nabídkou práce, pozvat na pohovor.
+            nabídkou práce a pozvat na pohovor. 
           </p>
         </div>
       </article>

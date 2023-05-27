@@ -9,7 +9,7 @@ import {
 } from "react-router-dom";
 import { Home } from "./Pages/Home/index";
 import { Marketa } from "./Pages/Marketa/index";
-// import { Alex } from "./Pages/Alex/index";
+import { Alex } from "./Pages/Alex/index";
 import "./style.css";
 
 const App = () => {
@@ -21,6 +21,7 @@ const App = () => {
             <ul>
               <Link to="/Home">Home</Link>
               <Link to="/Marketa">Markéta</Link>
+              <Link to="/Alex">Alex</Link>
             </ul>
           </menu>
         </header>
@@ -52,6 +53,10 @@ const router = createBrowserRouter([
       {
         path: "/Marketa",
         element: <Marketa />,
+      },
+      {
+        path: "/Alex",
+        element: <Alex />,
       },
     ],
   },

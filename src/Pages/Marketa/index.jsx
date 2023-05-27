@@ -16,11 +16,10 @@ export const Marketa = () => {
             <div className="home__data">
               <h1 className="home__name">Markéta Mížová</h1>
               <p className="home__work">
-                <strong> Budoucí Junior Frontend Developer </strong>
+                <strong>Junior Frontend Developer </strong>
               </p>
               <p className="home__work">
-                Jsem pilnou studentkou Digitální akademie web. V Czechitas jsou
-                super. Už se těším až si budu hledat novou práci!
+              Frontend se učím od roku 2020 pomocí kurzů Czechitas, Udemy, Skillmea. Díky tvorbě webových strábek nacházím ve své práci radost a uplatnění skrz <strong>kreativitu, systematické a analytické myšlení,</strong> mám příjemný pocit z dobře odvedené a viditelné práce. Momentálně pracuji jako koordinátorka projektu Národní technické knihovny. Mé projekty najdete na GitHubu.
               </p>
               <div className="home__socials">
                 <a
