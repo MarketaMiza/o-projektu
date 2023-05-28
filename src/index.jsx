@@ -21,7 +21,7 @@ const App = () => {
             <ul>
               <Link to="/Home">Home</Link>
               <Link to="/Marketa">Markéta</Link>
-              <Link to="/Alex">Alex</Link>
+              {/* <Link to="/Alex">Alex</Link> */}
             </ul>
           </menu>
         </header>
@@ -54,10 +54,10 @@ const router = createBrowserRouter([
         path: "/Marketa",
         element: <Marketa />,
       },
-      {
-        path: "/Alex",
-        element: <Alex />,
-      },
+      // {
+      //   path: "/Alex",
+      //   element: <Alex />,
+      // },
     ],
   },
 ]);
