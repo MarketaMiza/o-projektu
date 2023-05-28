@@ -9,17 +9,18 @@ import {
 } from "react-router-dom";
 import { Home } from "./Pages/Home/index";
 import { Marketa } from "./Pages/Marketa/index";
-import { Alex } from "./Pages/Alex/index";
+// import { Alex } from "./Pages/Alex/index";
 import "./style.css";
 
 const App = () => {
+
   return (
     <>
       <main className="container">
         <header>
           <menu>
             <ul>
-              <Link to="/Home">Home</Link>
+              <Link to="/">Home</Link>
               <Link to="/Marketa">Markéta</Link>
               {/* <Link to="/Alex">Alex</Link> */}
             </ul>
@@ -47,7 +48,7 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
-        path: "/Home",
+        index: true,
         element: <Home />,
       },
       {
